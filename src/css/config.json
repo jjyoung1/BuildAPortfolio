@@ -384,8 +384,14 @@
   "css": [
     "type.less",
     "grid.less",
-    "responsive-utilities.less"
+    "responsive-utilities.less",
+    "component-animations.less",
+    "dropdowns.less",
+    "tooltip.less",
+    "popovers.less",
+    "modals.less",
+    "carousel.less"
   ],
   "js": [],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=4210873ba1ea29f8136c9b3de3a8abed"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=2682e6766e81709925ff6528f2b8a7f5"
 }
