@@ -1,1 +1,15 @@
 
+.header_name {
+    font-size: xx-large;
+}
+
+.header_title {
+    font-size: x-large;
+}
+.header_logo {
+    margin-top: 25px;
+}
+
+.text-right {
+    text-align: right;
+}
