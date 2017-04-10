@@ -3,4 +3,4 @@
 
 [Design Mockup Specification](docs/design-mockup-portfolio.pdf)
 
-[Build a Portfolio Project Rubric](http://github.com/jjyoung1/doc/Build_a_Portfolio_Project_Rubric.html)
+[Build a Portfolio Project Rubric](https://github.com/jjyoung1/BuildAPortfolio/Build_a_Portfolio_Project_Rubric.html)
