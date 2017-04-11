@@ -1,0 +1,29 @@
+{
+  "name": "buildaporfolio",
+  "version": "1.0.0",
+  "description": "Responsive project for Udacity",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjyoung1/BuildAPortfolio.git"
+  },
+  "author": "Joel Young",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjyoung1/BuildAPortfolio/issues"
+  },
+  "homepage": "https://github.com/jjyoung1/BuildAPortfolio#readme",
+  "devDependencies": {
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-responsive-images": "^1.10.1"
+  }
+}

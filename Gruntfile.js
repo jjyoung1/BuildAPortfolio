@@ -10,6 +10,37 @@ module.exports = function (grunt) {
     // var mozjpeg = require('imagemin-mozjpeg');
 
     grunt.initConfig({
+        /* Clear out destination an temporary directories if they exist */
+        clean: {
+            dev: {
+                src: ['img']
+            },
+            postdev: {
+                src: ['temp']
+            }
+        },
+
+        /* Generate the images and temporary directorie if they're is missing */
+        mkdir: {
+            dev: {
+                options: {
+                    create: ['img', 'temp']
+                }
+            }
+        },
+
+        /* Copy the "fixed" images that don't go through processing into the images/directory */
+        copy: {
+            dev: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/img/fixed/',
+                    src: '*.{gif,jpg,png,svg}',
+                    dest: 'img/'
+                }]
+            }
+        },
+
         responsive_images: {
             dev: {
                 options: {
@@ -18,10 +49,10 @@ module.exports = function (grunt) {
                         width: '800',
                         quality: '80'
                     },
-                    {
-                        width: '800',
-                        quality: '80'
-                    }]
+                        {
+                            width: '400',
+                            quality: '80'
+                        }]
                 },
 
                 /*
@@ -32,34 +63,7 @@ module.exports = function (grunt) {
                     expand: true,
                     src: ['*.{gif,jpg,png}'],
                     cwd: 'src/img',
-                    dest: 'img/'
-                }]
-            }
-        },
-
-        /* Clear out the images directory if it exists */
-        clean: {
-            dev: {
-                src: ['img']
-            }
-        },
-
-        /* Generate the images directory if it is missing */
-        mkdir: {
-            dev: {
-                options: {
-                    create: ['img']
-                }
-            }
-        },
-
-        /* Copy the "fixed" images that don't go through processing into the images/directory */
-        copy: {
-            dev: {
-                files: [{
-                    expand: true,
-                    src: 'src/img/fixed/*.{gif,jpg,png,svg}',
-                    dest: 'img/'
+                    dest: 'temp/img/'
                 }]
             }
         },
@@ -73,7 +77,7 @@ module.exports = function (grunt) {
             dynamic: {
                 files: [{
                     expand: true,                  // Enable dynamic expansion
-                    cwd: 'src/img/',                   // Src matches are relative to this path
+                    cwd: 'temp/img/',                   // Src matches are relative to this path
                     src: ['*.{png,jpg,gif}'],   // Actual patterns to match
                     dest: 'img/'                  // Destination path prefix
                 }]
@@ -86,6 +90,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-mkdir');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images', 'img_compress']);
+    grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images', 'img_compress', 'clean:postdev']);
     grunt.registerTask('img_compress', ['imagemin']);
 };
