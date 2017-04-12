@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-/** {
-    border: 1px solid red !important;
-}*/
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -14,6 +10,7 @@
 body {
     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2d3c49;
+    margin: 0 15px;
 }
 
 .header-0 {
@@ -44,14 +41,6 @@ img.main {
     max-width: 100%;
 }
 
-.featured {
-    text-align: center;
-}
-
-#featured h2 {
-    color: #7d97ad;
-}
-
 .header-1, .header-logo {
     text-align: center;
     margin: 0 auto;
@@ -69,12 +58,13 @@ img.main {
     margin-top: 10px;
 }
 
-#featured article {
-    margin: 0 auto 10px;
+#featured h2 {
+    color: #7d97ad;
 }
 
-/*#featured article:first-child {*/
-    /*margin: -10px auto 10px;*/
+/*#featured article {*/
+    /*margin: 0 auto 15px;*/
+    /*padding: 0;*/
 /*}*/
 
 #featured img {
@@ -87,6 +77,18 @@ img.main {
     margin-bottom: 0;
 }
 
+.featured {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    /* Remove padding for single column articles */
+    article.col-xs-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 /* Bootstrap sm breakpoint */
 @media (min-width: 768px) {
 
@@ -94,7 +96,7 @@ img.main {
         text-align: left;
     }
 
-    .header-logo {
+    .header-logo, .header-name {
         margin-top: 15px;
     }
 
@@ -102,14 +104,5 @@ img.main {
         text-align: right;
     }
 
-    .header-name {
-        margin-top: 15px;
-    }
 }
-
-/*.header {*/
-/*border-bottom-style: solid;*/
-/*border-bottom-color: #7d97ad;*/
-/*border-bottom-width: 2px;*/
-/*}*/
 
