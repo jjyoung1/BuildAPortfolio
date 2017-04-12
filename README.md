@@ -15,7 +15,7 @@ installation to server.
 Execute the following command in the project directory to initialize the project,
 install grunt, and install the required plugins via running:
 
-   git  npm install
+   npm install
 
 The following plugins will be installed:
 * grunt
@@ -25,3 +25,4 @@ The following plugins will be installed:
 * grunt-mkdir
 * grunt-contrib-imagemin
 
+To Build the project execute `grunt`

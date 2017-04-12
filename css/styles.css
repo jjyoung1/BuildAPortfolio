@@ -34,6 +34,7 @@
 }
 
 img.hero {
+    width: 100%;
     max-width : 100%;
 }
 
@@ -44,7 +45,7 @@ img.hero {
 }*/
 
 /* Bootstrap xs breakpoint */
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {*/
 
     .header-1, .header-logo {
         text-align: center;
@@ -67,7 +68,7 @@ img.hero {
         width: 100%;
       /*  margin: 0 auto;*/
     }
-}
+/*}*/
 
 /* Bootstrap sm breakpoint */
 @media (min-width: 768px) {
