@@ -41,14 +41,23 @@ module.exports = function (grunt) {
             }
         },
 
+        /* The following plugins perform the image optimization.
+         * /temp/img is used as a temporary working directory, and is created and subsequently destroyed
+         * after optimization is complete.  The optimizied files are placed in the /img directory.
+         */
         responsive_images: {
             dev: {
                 options: {
                     engine: 'im',
-                    sizes: [{
-                        width: '800',
-                        quality: '80'
-                    },
+                    sizes: [
+                        {
+                            width: '1600',
+                            quality: '80'
+                        },
+                        {
+                            width: '800',
+                            quality: '80'
+                        },
                         {
                             width: '400',
                             quality: '80'
