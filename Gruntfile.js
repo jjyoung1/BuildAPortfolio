@@ -52,15 +52,13 @@ module.exports = function (grunt) {
                     sizes: [
                         {
                             width: '1600',
-                            quality: '80'
+                            quality: '60',
+                            name: '2x'
                         },
                         {
                             width: '800',
-                            quality: '80'
-                        },
-                        {
-                            width: '400',
-                            quality: '80'
+                            quality: '60',
+                            name: '1x'
                         }]
                 },
 

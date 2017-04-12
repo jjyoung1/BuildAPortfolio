@@ -1,6 +1,8 @@
-* {
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/** {
     border: 1px solid red !important;
-}
+}*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -9,13 +11,20 @@
     box-sizing: border-box;
 }
 
-/*.container {
-    margin-left : 15px;
-    margin-right : 15px;
-}*/
+body {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #2d3c49;
+}
+
+.header-0 {
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-color: #7d97ad;
+    border-bottom-width: 2px;
+}
 
 .header-name {
-    font-size: xx-large;
+    font-size: 3rem;
     margin: 0 auto;
 }
 
@@ -29,44 +38,54 @@
     max-width: 65px;
 }
 
-img.hero {
+img.main {
+    margin: 15px auto;
     width: 100%;
-    max-width : 100%;
+    max-width: 100%;
 }
 
 .featured {
-    text-align : center;
+    text-align: center;
 }
 
-/* Bootstrap xs breakpoint */
-/*@media (max-width: 767px) {*/
+#featured h2 {
+    color: #7d97ad;
+}
 
-    .header-1, .header-logo {
-        text-align: center;
-        margin: 0 auto;
-    }
+.header-1, .header-logo {
+    text-align: center;
+    margin: 0 auto;
+}
 
-    .header-logo {
-        margin-top : 10px;
-    }
+.header-logo {
+    margin-top: 10px;
+}
 
-    .header-2, .header-title, .header-name {
-        text-align: center;
-    }
+.header-2, .header-title, .header-name {
+    text-align: center;
+}
 
-    .header-name {
-        margin-top: 10px;
-    }
+.header-name {
+    margin-top: 10px;
+}
 
-    #featured article {
-        margin: 10px auto;
-    }
+#featured article {
+    margin: 0 auto 10px;
+}
 
-    #featured img {
-        width: 100%;
-      /*  margin: 0 auto;*/
-    }
+/*#featured article:first-child {*/
+    /*margin: -10px auto 10px;*/
 /*}*/
+
+#featured img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+#featured h2 {
+    margin-bottom: 0;
+}
 
 /* Bootstrap sm breakpoint */
 @media (min-width: 768px) {
@@ -76,8 +95,9 @@ img.hero {
     }
 
     .header-logo {
-        margin-top: 10px;
+        margin-top: 15px;
     }
+
     .header-title, .header-name {
         text-align: right;
     }
@@ -87,10 +107,9 @@ img.hero {
     }
 }
 
-
 /*.header {*/
-    /*border-bottom-style: solid;*/
-    /*border-bottom-color: #7d97ad;*/
-    /*border-bottom-width: 2px;*/
+/*border-bottom-style: solid;*/
+/*border-bottom-color: #7d97ad;*/
+/*border-bottom-width: 2px;*/
 /*}*/
 
