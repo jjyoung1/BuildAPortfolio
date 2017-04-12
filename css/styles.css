@@ -1,8 +1,6 @@
-/*
 * {
     border: 1px solid red !important;
 }
-*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -27,8 +25,6 @@
 }
 
 .header-logo {
-    /*display: block;
-    */margin-top: 15px;
     width: 20%;
     max-width: 65px;
 }
@@ -38,11 +34,9 @@ img.hero {
     max-width : 100%;
 }
 
-/*.featured {
-    margin: 10px auto 10px;
-    width: 33%;
-    max-width: 100%;
-}*/
+.featured {
+    text-align : center;
+}
 
 /* Bootstrap xs breakpoint */
 /*@media (max-width: 767px) {*/
@@ -50,6 +44,10 @@ img.hero {
     .header-1, .header-logo {
         text-align: center;
         margin: 0 auto;
+    }
+
+    .header-logo {
+        margin-top : 10px;
     }
 
     .header-2, .header-title, .header-name {
@@ -77,12 +75,15 @@ img.hero {
         text-align: left;
     }
 
+    .header-logo {
+        margin-top: 10px;
+    }
     .header-title, .header-name {
         text-align: right;
     }
 
     .header-name {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 }
 
