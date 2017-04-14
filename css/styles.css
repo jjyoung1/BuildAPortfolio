@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+/** {*/
+    /*border: solid 1px red;*/
+/*}*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -13,13 +16,7 @@ body {
     margin: 0 15px;
 }
 
-.header-0 {
-    padding-bottom: 15px;
-    border-bottom-style: solid;
-    border-bottom-color: #7d97ad;
-    border-bottom-width: 2px;
-}
-
+/* Content Header */
 .header-name {
     font-size: 3rem;
     margin: 0 auto;
@@ -35,13 +32,8 @@ body {
     max-width: 65px;
 }
 
-img.main {
-    margin: 15px auto;
-    width: 100%;
-    max-width: 100%;
-}
-
-.header-1, .header-logo {
+.header-1,
+.header-logo {
     text-align: center;
     margin: 0 auto;
 }
@@ -50,7 +42,9 @@ img.main {
     margin-top: 10px;
 }
 
-.header-2, .header-title, .header-name {
+.header-2,
+.header-title,
+.header-name {
     text-align: center;
 }
 
@@ -58,14 +52,16 @@ img.main {
     margin-top: 10px;
 }
 
+img.main {
+    margin: 15px auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Featured Section */
 #featured h2 {
     color: #7d97ad;
 }
-
-/*#featured article {*/
-    /*margin: 0 auto 15px;*/
-    /*padding: 0;*/
-/*}*/
 
 #featured img {
     width: 100%;
@@ -81,9 +77,10 @@ img.main {
     text-align: center;
 }
 
+/* Rules for xs screen sizes */
 @media (max-width: 767px) {
     /* Remove padding for single column articles */
-    article.col-xs-12 {
+    article {
         padding-left: 0;
         padding-right: 0;
     }
@@ -96,55 +93,19 @@ img.main {
         text-align: left;
     }
 
-    .header-logo, .header-name {
+    .header-logo,
+    .header-name {
         margin-top: 15px;
     }
 
-    .header-title, .header-name {
+    .header-title,
+    .header-name {
         text-align: right;
     }
-
-    /*.col-sm-4 {*/
-        /*padding-right: 0;*/
-        /*padding-left: 0;*/
-
-    /*}*/
-
-    /*.featured > article {*/
-        /*padding-left: 0;*/
-        /*padding-right: 0;*/
-    /*}*/
-
-    /*.feature > article {*/
-        /*width: 33%;*/
-        /*max-width: 100%;*/
-    /*}*/
-    /*.featured > img {*/
-        /*width: 33%;*/
-        /*height: auto;*/
-        /*max-width: 100%;*/
-    /*}*/
-
-    .col-sm-4:nth-child(3n+3) {
+    /* Remove padding for single column articles */
+    article.col-sm-12 {
+        padding-left: 0;
         padding-right: 0;
     }
-
-    .col-sm-4:nth-child(3n+1) {
-        padding-left: 0;
-    }
-
-    /*.col-sm-4 {*/
-        /*margin: 0 1px;*/
-    /*}*/
-
-    /*.featured > img {*/
-
-        /*margin: 0;*/
-        /*margin-right: 10px;*/
-    /*}*/
-    /*.classWithPad {*/
-        /*margin: 10px;*/
-        /*padding: 10px;*/
-    /*}*/
 }
 
