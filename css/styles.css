@@ -52,7 +52,7 @@ body {
     margin-top: 10px;
 }
 
-img.main {
+.main {
     margin: 15px auto;
     width: 100%;
     max-width: 100%;
@@ -75,6 +75,13 @@ img.main {
 
 .featured {
     text-align: center;
+}
+
+.caption {
+    margin-bottom: 0;
+}
+.caption-link {
+    margin-bottom: 10px;
 }
 
 /* Rules for xs screen sizes */
