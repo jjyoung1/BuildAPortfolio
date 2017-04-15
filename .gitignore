@@ -1,7 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 # Ignore all files under the dist/ directory
-/img/
+
 node_modules/
 
 ### JetBrains template
